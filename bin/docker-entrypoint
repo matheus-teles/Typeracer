@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "=== WEB ENTRYPOINT ==="
+
+COMMAND="$1"
+
+case "$COMMAND" in
+  setup)
+    echo "=== SETUP APPLICATION ==="
+    ./bin/prepare-application
+    ;;
+  )
+esac
